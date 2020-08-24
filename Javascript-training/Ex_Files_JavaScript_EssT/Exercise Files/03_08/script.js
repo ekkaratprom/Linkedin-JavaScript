@@ -1,8 +1,19 @@
 var pens;
 pens = ["red", "blue", "green", "orange"];
-
 console.log("Before: ", pens);
 
+var pens2 = new Array("red", "blue", "green", "orange");
+console.log("pens2: ", pens2);
+
+var mixedBag = ["keys", 5, false, 568, "One more thing"];
+console.log("mixedBag: ", mixedBag);
+
+// index[0,1,2,3,...]
+var fourthPen = pens[3];
+console.log("fourth Pen Before Change: ", fourthPen);
+
+fourthPen = "purple";
+console.log("fourth Pen After Change: ", fourthPen);
 // PROPERTIES:
 // Get a property of an object by name:
 // console.log("Array length: ", pens.length);
