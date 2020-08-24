@@ -3,20 +3,21 @@ pens = ["red", "blue", "green", "orange"];
 console.log("Before: ", pens);
 
 var pens2 = new Array("red", "blue", "green", "orange");
-console.log("pens2: ", pens2);
+// console.log("pens2: ", pens2);
 
 var mixedBag = ["keys", 5, false, 568, "One more thing"];
-console.log("mixedBag: ", mixedBag);
+// console.log("mixedBag: ", mixedBag);
 
 // index[0,1,2,3,...]
 var fourthPen = pens[3];
-console.log("fourth Pen Before Change: ", fourthPen);
+// console.log("fourth Pen Before Change: ", fourthPen);
 
 fourthPen = "purple";
-console.log("fourth Pen After Change: ", fourthPen);
+// console.log("fourth Pen After Change: ", fourthPen);
+
 // PROPERTIES:
 // Get a property of an object by name:
-// console.log("Array length: ", pens.length);
+console.log("Array length: ", pens.length);
 
 // METHODS:
 // Reverse the array:
@@ -26,7 +27,7 @@ console.log("fourth Pen After Change: ", fourthPen);
 // pens.shift();
 
 // Add comma-separated list of values to the front of the array:
-// pens.unshift("purple", "black");
+pens.unshift("purple", "black");
 
 // Remove the last value of the array:
 // pens.pop();
@@ -41,15 +42,22 @@ console.log("fourth Pen After Change: ", fourthPen);
 
 // Create a copy of an array. Typically assigned to a new variable:
 // var newPens = pens.slice();
+
+// newPens.push("purple");
 // console.log("New pens: ", newPens);
 
 // Return the first element that matches the search parameter after the specified index position. Defaults to index position 0. Arguments: pens.indexOf(search, index):
 // var result = pens.indexOf(search, index);
+//serach orange start form blue
+// var result = pens.indexOf("orange", 1);
+
 // console.log("The search result index is: ", result);
+// console.log("The result is: ", pens[result]);
 
 // Return the items in an array as a comma separated string. The separator argument can be used to change the comma to something else. Arguments: pens.join(separator):
 // var arrayString = pens.join(separator);
-// console.log("String from array: ", arrayString);
+var arrayString = pens.join(" & ");
+console.log("String from array: ", arrayString);
 
 // MDN documentation for Array:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array

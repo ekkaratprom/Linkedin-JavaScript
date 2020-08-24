@@ -9,3 +9,6 @@ if (a !== b) {
 }
 
 console.log(theNumbersMatch);
+
+// XOR
+// if (x ? !y : y) {}
