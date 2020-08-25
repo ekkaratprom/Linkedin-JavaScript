@@ -31,4 +31,5 @@ console.log(courses);
 
 console.log(courses[1].instructor);
 
+// +1 views
 console.log(courses[1].updateViews());
