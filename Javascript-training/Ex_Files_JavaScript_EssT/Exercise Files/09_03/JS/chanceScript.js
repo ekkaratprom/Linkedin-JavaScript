@@ -1,6 +1,7 @@
 const MIN = 0;
 const MAX = 36;
 var testNumber = 15;
+//counting round
 var i = 1;
 
 while (MAX) {
